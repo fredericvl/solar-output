@@ -9,6 +9,6 @@ ENV PVOUTPUT_API_KEY=my_secret_api_key
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY . .
+COPY solar-output.py ./
 
 CMD [ "python", "./solar-output.py" ]
