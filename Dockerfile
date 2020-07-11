@@ -1,3 +1,6 @@
+ARG VERSION
+ARG BUILD_DATE
+
 FROM python:alpine
 
 WORKDIR /usr/src/app
