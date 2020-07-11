@@ -1,8 +1,8 @@
+FROM python:alpine
+
 ARG VERSION
 ARG BUILD_DATE
 ARG VCS_REF
-
-FROM python:alpine
 
 LABEL maintainer="fredericvl" \
   org.opencontainers.image.created=$BUILD_DATE \
@@ -12,7 +12,7 @@ LABEL maintainer="fredericvl" \
   org.opencontainers.image.revision=$VCS_REF \
   org.opencontainers.image.vendor="fredericvl" \
   org.opencontainers.image.title="saj-monitor" \
-  org.opencontainers.image.description="Docker image update notifier" \
+  org.opencontainers.image.description="Upload SAJ solar inverter data to PvOutput every 5 minutes" \
   org.opencontainers.image.licenses="MIT"
 
 WORKDIR /usr/src/app
